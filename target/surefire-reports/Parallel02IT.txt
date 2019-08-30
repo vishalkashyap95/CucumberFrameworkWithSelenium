@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Parallel02IT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.591 s <<< FAILURE! - in Parallel02IT
+Verify Post page(Open Source CMS login cases)  Time elapsed: 14.826 s  <<< FAILURE!
+java.lang.AssertionError: FAILED to verify Title of Posts page.
+

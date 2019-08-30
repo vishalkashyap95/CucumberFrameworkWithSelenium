@@ -1,0 +1,118 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2036093300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Browser and navigate to Login page",
+            "match": {
+              "location": "LoginStepDefinition.openBrowserAndNavigateToLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-30T15:12:47.225Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11749261300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initBrowser()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify Post page",
+        "description": "",
+        "id": "open-source-cms-login-cases;verify-post-page",
+        "after": [
+          {
+            "result": {
+              "duration": 723753300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 264775300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click on post menu",
+            "match": {
+              "location": "LoginStepDefinition.clickOnPostMenu()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: FAILED to verify Title of Posts page.\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat stepDefinition.LoginStepDefinition.verifyTitleOfPostPage(LoginStepDefinition.java:85)\r\n\tat ✽.verify title of Post page(file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Login.feature:23)\r\n",
+              "duration": 40293900,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "verify title of Post page",
+            "match": {
+              "location": "LoginStepDefinition.verifyTitleOfPostPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31200,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "verify all links under post menu",
+            "match": {
+              "location": "LoginStepDefinition.verifyAllLinksUnderPostMenu()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Open Source CMS login cases",
+    "description": "",
+    "id": "open-source-cms-login-cases",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

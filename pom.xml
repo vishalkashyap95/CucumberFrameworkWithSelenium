@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>CucumberFrameworkPractise</groupId>
+    <artifactId>CucumberFrameworkPractise</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <browser></browser>
+        <tag></tag>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>4.7.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>4.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>4.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>4.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.temyers</groupId>
+            <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+                <configuration>
+                    <forkCount>2</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <includes>
+                        <include>**/Parallel*IT.class</include>
+                    </includes>
+                    <systemProperties>
+                        <property>
+                            <name>browser</name>
+                            <value>${browser}</value>
+                        </property>
+                        <property>
+                            <name>tag</name>
+                            <value>${tag}</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+
+
+            <plugin>
+                <groupId>com.github.temyers</groupId>
+                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                <version>5.0.0</version>
+                <executions>
+                    <execution>
+                        <id>generateRunners</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>generateRunners</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Mandatory -->
+                            <!-- List of package names to scan for glue code. -->
+                            <glue>
+                                <package>stepDefinition</package>
+                            </glue>
+                            <outputDirectory>target/generated-test-sources/cucumber</outputDirectory>
+                            <featuresDirectory>src/test/resources/features</featuresDirectory>
+                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <strict>true</strict>
+                            <monochrome>false</monochrome>
+                            <tags>
+                                <tag>~@SmokeTest</tag>
+                                <tag>~@RegressionTest</tag>
+                                <tag>~@End2EndTest</tag>
+                                <tag>${tag}</tag>
+                            </tags>
+                            <namingScheme>simple</namingScheme>
+                            <namingPattern>Parallel{c}IT</namingPattern>
+                            <parallelScheme>SCENARIO</parallelScheme>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

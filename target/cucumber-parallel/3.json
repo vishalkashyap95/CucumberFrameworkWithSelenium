@@ -1,0 +1,84 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-08-30T15:13:02.216Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9717494800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Test senario",
+        "description": "",
+        "id": "test-feature;test-senario",
+        "after": [
+          {
+            "result": {
+              "duration": 805634600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 182700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "ff",
+            "match": {
+              "location": "Test.ff2()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "fffgasf",
+            "match": {
+              "location": "Test.fsffgasf()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Test feature",
+    "description": "",
+    "id": "test-feature",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Test.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

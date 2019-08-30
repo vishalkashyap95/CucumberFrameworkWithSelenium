@@ -1,0 +1,137 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2247517200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Browser and navigate to Login page",
+            "match": {
+              "location": "LoginStepDefinition.openBrowserAndNavigateToLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-30T15:12:46.100Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11882164000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": ": Test Login functionality with valid data",
+        "description": "",
+        "id": "open-source-cms-login-cases;:-test-login-functionality-with-valid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 694357300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21724392500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter valid uesrname and valid password",
+            "match": {
+              "location": "LoginStepDefinition.Enter_valid_uesrname_and_valid_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "xyz",
+                  "abc"
+                ]
+              },
+              {
+                "cells": [
+                  "asd",
+                  "opensourcecms"
+                ]
+              },
+              {
+                "cells": [
+                  "opensourcecms",
+                  "kmdns"
+                ]
+              },
+              {
+                "cells": [
+                  "opensourcecms",
+                  "opensourcecms"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19707300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should be able to login successfully",
+            "match": {
+              "location": "LoginStepDefinition.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Open Source CMS login cases",
+    "description": "",
+    "id": "open-source-cms-login-cases",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

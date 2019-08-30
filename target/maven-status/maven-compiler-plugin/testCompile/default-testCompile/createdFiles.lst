@@ -1,0 +1,11 @@
+Parallel02IT.class
+stepDefinition\LoginStepDefinition.class
+Parallel01IT.class
+Pages\PostsPage.class
+stepDefinition\Hooks.class
+Common\Utils.class
+Common\EnvironmentSetup.class
+stepDefinition\Test.class
+Pages\LoginPage.class
+TestRunner\Runner.class
+Parallel03IT.class
