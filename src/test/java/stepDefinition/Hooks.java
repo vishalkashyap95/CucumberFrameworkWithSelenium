@@ -18,11 +18,11 @@ public class Hooks {
             if (!sBrowser.equals("")) {
                 System.out.println("inSide initBrowser " + sBrowser);
                 if (sBrowser.toLowerCase().contains("chrome")) {
-                    System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\VishalWorkSpace\\mvncommandlineproject\\CucumberFrameworkPractise\\src\\test\\resources\\browserBinaries\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", getClass().getClassLoader().getResource("browserBinaries/chromedriver.exe").getPath());
                     driver = new ChromeDriver();
                     System.out.println("Running tests in Chrome Browser");
                 } else if (sBrowser.toLowerCase().contains("chromehead")) {
-                    System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\VishalWorkSpace\\mvncommandlineproject\\CucumberFrameworkPractise\\src\\test\\resources\\browserBinaries\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "headless binaries");
                     ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.addArguments("--headless");
                     driver = new ChromeDriver();

@@ -2,5 +2,5 @@
 Feature: Test feature
 
   Scenario: Test senario
-    Given ff
-    Then fffgasf
+    Given performSomeSteps
+    Then performSomeOtherSteps

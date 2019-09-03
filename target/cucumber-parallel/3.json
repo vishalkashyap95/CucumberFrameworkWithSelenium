@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-09-03T09:53:55.592Z",
+        "start_timestamp": "2019-09-03T11:52:03.332Z",
         "before": [
           {
             "result": {
-              "duration": 11433494500,
+              "duration": 13955058300,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 823320000,
+              "duration": 3926246700,
               "status": "passed"
             },
             "match": {
@@ -35,25 +35,25 @@
         "steps": [
           {
             "result": {
-              "duration": 917800,
+              "duration": 1036500,
               "status": "passed"
             },
             "line": 5,
-            "name": "ff",
+            "name": "performSomeSteps",
             "match": {
-              "location": "Test.ff2()"
+              "location": "TestStepDefinition.performSomeSteps()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 67300,
+              "duration": 93700,
               "status": "passed"
             },
             "line": 6,
-            "name": "fffgasf",
+            "name": "performSomeOtherSteps",
             "match": {
-              "location": "Test.fsffgasf()"
+              "location": "TestStepDefinition.performSomeOtherSteps()"
             },
             "keyword": "Then "
           }
@@ -69,7 +69,7 @@
     "description": "",
     "id": "test-feature",
     "keyword": "Feature",
-    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Test.feature",
+    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkWithSelenium/src/test/resources/features/Test.feature",
     "tags": [
       {
         "name": "@Test",

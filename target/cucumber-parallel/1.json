@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2209461600,
+              "duration": 2602792400,
               "status": "passed"
             },
             "line": 5,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T09:53:50.047Z",
+        "start_timestamp": "2019-09-03T11:52:01.982Z",
         "before": [
           {
             "result": {
-              "duration": 12618084100,
+              "duration": 13865448700,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 672399300,
+              "duration": 687065600,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7217035800,
+              "duration": 7400040300,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1957352600,
+              "duration": 1977095400,
               "status": "passed"
             },
             "line": 9,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 30793500,
+              "duration": 53693900,
               "status": "passed"
             },
             "line": 10,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 317619900,
+              "duration": 402950900,
               "status": "passed"
             },
             "line": 11,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 3182283500,
+              "duration": 3192308400,
               "status": "passed"
             },
             "line": 12,
@@ -126,7 +126,7 @@
     "description": "",
     "id": "open-source-cms-login-cases",
     "keyword": "Feature",
-    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Login.feature",
+    "uri": "file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkWithSelenium/src/test/resources/features/Login.feature",
     "tags": [
       {
         "name": "@Login",

@@ -8,6 +8,10 @@
     <artifactId>CucumberFrameworkPractise</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
+    <!--To Run the project from maven command, use below command-->
+    <!--mvn clean verify -Dbrowser=chrome -Dtag=@Login,@Test-->
+
     <properties>
         <browser></browser>
         <tag></tag>
@@ -104,9 +108,9 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>cucucmber-jvm-report</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-JVM-reports</outputDirectory>
-                            <inputDirectory>${project.build.directory}/cucumber-paralell/</inputDirectory>
+                            <projectName>CucumberSeleniumReports</projectName>
+                            <outputDirectory>${project.build.directory}/Cucumber-html-report</outputDirectory>
+                            <inputDirectory>${project.build.directory}/cucumber-parallel/</inputDirectory>
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>

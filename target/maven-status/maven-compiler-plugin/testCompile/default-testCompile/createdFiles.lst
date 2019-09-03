@@ -5,7 +5,7 @@ Pages\PostsPage.class
 stepDefinition\Hooks.class
 Common\Utils.class
 Common\EnvironmentSetup.class
-stepDefinition\Test.class
+stepDefinition\TestStepDefinition.class
 Pages\LoginPage.class
 TestRunner\Runner.class
 Parallel03IT.class
