@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2036093300,
+              "duration": 2209461600,
               "status": "passed"
             },
             "line": 5,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2019-08-30T15:12:47.225Z",
+        "start_timestamp": "2019-09-03T09:53:50.047Z",
         "before": [
           {
             "result": {
-              "duration": 11749261300,
+              "duration": 12618084100,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 21,
+        "line": 7,
         "name": "Verify Post page",
         "description": "",
         "id": "open-source-cms-login-cases;verify-post-page",
         "after": [
           {
             "result": {
-              "duration": 723753300,
+              "duration": 672399300,
               "status": "passed"
             },
             "match": {
@@ -56,23 +56,34 @@
         "steps": [
           {
             "result": {
-              "duration": 264775300,
+              "duration": 7217035800,
               "status": "passed"
             },
-            "line": 22,
-            "name": "click on post menu",
+            "line": 8,
+            "name": "Login with valid credentials",
             "match": {
-              "location": "LoginStepDefinition.clickOnPostMenu()"
+              "location": "LoginStepDefinition.loginWithValidCredentials()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: FAILED to verify Title of Posts page.\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat stepDefinition.LoginStepDefinition.verifyTitleOfPostPage(LoginStepDefinition.java:85)\r\n\tat ✽.verify title of Post page(file:/C:/Users/user/Desktop/VishalWorkSpace/mvncommandlineproject/CucumberFrameworkPractise/src/test/resources/features/Login.feature:23)\r\n",
-              "duration": 40293900,
-              "status": "failed"
+              "duration": 1957352600,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 9,
+            "name": "click on post menu",
+            "match": {
+              "location": "LoginStepDefinition.clickOnPostMenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30793500,
+              "status": "passed"
+            },
+            "line": 10,
             "name": "verify title of Post page",
             "match": {
               "location": "LoginStepDefinition.verifyTitleOfPostPage()"
@@ -81,13 +92,25 @@
           },
           {
             "result": {
-              "duration": 31200,
-              "status": "skipped"
+              "duration": 317619900,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 11,
             "name": "verify all links under post menu",
             "match": {
               "location": "LoginStepDefinition.verifyAllLinksUnderPostMenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3182283500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click logout and verify user redirected to login page",
+            "match": {
+              "location": "LoginStepDefinition.clickLogoutAndVerifyUserRedirectedToLoginPage()"
             },
             "keyword": "Then "
           }

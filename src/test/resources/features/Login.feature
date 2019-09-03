@@ -4,6 +4,14 @@ Feature: Open Source CMS login cases
   Background:
     Given Open Browser and navigate to Login page
 
+  Scenario: Verify Post page
+    Given Login with valid credentials
+    Then click on post menu
+    Then verify title of Post page
+    Then verify all links under post menu
+    Then click logout and verify user redirected to login page
+
+
   Scenario: : Test Login functionality with valid data
     When Enter valid uesrname and valid password
       | username      | password      |
@@ -12,13 +20,6 @@ Feature: Open Source CMS login cases
       | opensourcecms | kmdns         |
       | opensourcecms | opensourcecms |
     Then user should be able to login successfully
-#    Then close the browser
 #    Examples:
 #      | username      | password      |
 #      | opensourcecms | opensourcecms |
-
-
-  Scenario: Verify Post page
-    Given click on post menu
-    Then verify title of Post page
-    Then verify all links under post menu

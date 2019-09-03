@@ -4,13 +4,12 @@ import Common.EnvironmentSetup;
 import Common.Utils;
 import Pages.LoginPage;
 import Pages.PostsPage;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 import java.util.Map;
@@ -72,26 +71,48 @@ public class LoginStepDefinition extends EnvironmentSetup {
         }
     }
 
+    @Given("^Login with valid credentials$")
+    public void loginWithValidCredentials() {
+        loginPage.login(configProb.getProperty("username"), configProb.getProperty("password"));
+    }
 
-    @Given("^click on post menu$")
-    public void clickOnPostMenu() {
+    @Then("^click on post menu$")
+    public void clickOnPostMenu() throws Exception {
         utils.clickWebElement(postsPage.postsMenuLink);
+        Thread.sleep(1000);
     }
 
     @Then("verify title of Post page")
     public void verifyTitleOfPostPage() {
         System.out.println("Expected Posts page Title 'Posts ‹ opensourcecms — WordPress'");
-        System.out.println("Actual Posts page Title : " + driver.getTitle());
-        Assert.assertTrue("FAILED to verify Title of Posts page.", driver.getTitle().equals("Posts ‹ opensourcecms — WordPress"));
+        System.out.println("Actual Posts page Title contains 'Posts'? : " + driver.getTitle().contains("Posts"));
+        Assert.assertTrue("FAILED to verify Title of Posts page.", driver.getTitle().contains("Posts"));
     }
 
     @Then("verify all links under post menu")
     public void verifyAllLinksUnderPostMenu() {
-//        for (WebElement link : postsPage.listOfLinksUnderPostMenu) {
-//        Syste
-//        }
-        System.out.println(postsPage.listOfLinksUnderPostMenu.iterator().next());
-        System.out.println(postsPage.listOfLinksUnderPostMenu.iterator().next().getText().contains("Add New"));
+        String subMenuLinkText = "All Posts, Add New, Categories, Tags";
+        for (int i = 0; i < postsPage.listOfLinksUnderPostMenu.size(); i++) {
+            System.out.println(postsPage.listOfLinksUnderPostMenu.get(i).getText());
+            Assert.assertTrue("FAILED to verify all sub menus of Post Menu.", subMenuLinkText.contains(postsPage.listOfLinksUnderPostMenu.get(i).getText()));
+        }
     }
 
+    @Then("click logout and verify user redirected to login page")
+    public void clickLogoutAndVerifyUserRedirectedToLoginPage() {
+        try {
+            utils.mouseOverToElement(postsPage.profileBarSection);
+            Thread.sleep(1000);
+            Assert.assertTrue("Logout link was not displayed.", postsPage.logoutLink.isDisplayed());
+            Thread.sleep(500);
+            postsPage.logoutLink.click();
+            System.out.println("Successfully clicked on Logout Link.");
+            System.out.println("Expected Login page Title 'Log In ‹ opensourcecms — WordPress'");
+            System.out.println("Actual Login page Title contains 'Log In'? : " + driver.getTitle().contains("Log In "));
+            Assert.assertTrue("FAILED to verify title of Login page after logout.", driver.getTitle().contains("Log In "));
+        } catch (Exception e) {
+            System.out.println("Exception caught in clickLogoutAndVerifyUserRedirectedToLoginPage() method : " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }

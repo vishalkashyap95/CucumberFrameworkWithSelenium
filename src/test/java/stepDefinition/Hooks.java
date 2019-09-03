@@ -35,13 +35,19 @@ public class Hooks {
                 return false;
             }
         } catch (Exception e) {
-            System.out.println();
+            System.out.println("Exception caught in initBrowser() method :" + e.getMessage());
+            if (driver != null) {
+                driver.quit();
+            }
             return false;
         }
     }
 
     @After
     public void tearDown() {
-        driver.quit();
+        System.out.println("inSide tearDown() : Closing browser.");
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

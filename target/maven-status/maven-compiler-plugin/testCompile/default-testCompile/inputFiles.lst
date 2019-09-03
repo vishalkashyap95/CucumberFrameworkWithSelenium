@@ -1,10 +1,10 @@
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\stepDefinition\Hooks.java
-C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\target\generated-test-sources\cucumber\Parallel01IT.java
-C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\target\generated-test-sources\cucumber\Parallel02IT.java
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\Common\Utils.java
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\TestRunner\Runner.java
-C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\target\generated-test-sources\cucumber\Parallel03IT.java
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\Pages\PostsPage.java
+C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\target\cucumber-paralell\Parallel01IT.java
+C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\target\cucumber-paralell\Parallel02IT.java
+C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\target\cucumber-paralell\Parallel03IT.java
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\Common\EnvironmentSetup.java
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\Pages\LoginPage.java
 C:\Users\user\Desktop\VishalWorkSpace\mvncommandlineproject\CucumberFrameworkPractise\src\test\java\stepDefinition\LoginStepDefinition.java

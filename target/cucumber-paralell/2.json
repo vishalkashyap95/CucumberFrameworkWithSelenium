@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2247517200,
+              "duration": 2081426700,
               "status": "passed"
             },
             "line": 5,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2019-08-30T15:12:46.100Z",
+        "start_timestamp": "2019-09-03T09:53:50.043Z",
         "before": [
           {
             "result": {
-              "duration": 11882164000,
+              "duration": 13100212200,
               "status": "passed"
             },
             "match": {
@@ -36,14 +36,14 @@
             }
           }
         ],
-        "line": 7,
+        "line": 15,
         "name": ": Test Login functionality with valid data",
         "description": "",
         "id": "open-source-cms-login-cases;:-test-login-functionality-with-valid-data",
         "after": [
           {
             "result": {
-              "duration": 694357300,
+              "duration": 675138200,
               "status": "passed"
             },
             "match": {
@@ -56,10 +56,10 @@
         "steps": [
           {
             "result": {
-              "duration": 21724392500,
+              "duration": 21237844600,
               "status": "passed"
             },
-            "line": 8,
+            "line": 16,
             "name": "Enter valid uesrname and valid password",
             "match": {
               "location": "LoginStepDefinition.Enter_valid_uesrname_and_valid_password(DataTable)"
@@ -100,10 +100,10 @@
           },
           {
             "result": {
-              "duration": 19707300,
+              "duration": 26969800,
               "status": "passed"
             },
-            "line": 14,
+            "line": 22,
             "name": "user should be able to login successfully",
             "match": {
               "location": "LoginStepDefinition.user_should_be_able_to_login_successfully()"

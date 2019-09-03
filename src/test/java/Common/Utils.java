@@ -2,6 +2,7 @@ package Common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils extends EnvironmentSetup {
@@ -36,6 +37,25 @@ public class Utils extends EnvironmentSetup {
             }
         } catch (Exception e) {
             System.out.println("Exception caught in clickWebElement() method : " + e.getMessage());
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+
+    public boolean mouseOverToElement(WebElement element) {
+        try {
+            if (element.isDisplayed()) {
+                new Actions(driver).moveToElement(element).perform();
+                Thread.sleep(800);
+                return true;
+            } else {
+                System.out.println("FAILED : Element is not displayed to mouseHover.");
+                return false;
+            }
+
+        } catch (Exception e) {
+            System.out.println("Exception caught in mouseHoverToElement() method : " + e.getMessage());
             e.printStackTrace();
             return false;
         }
