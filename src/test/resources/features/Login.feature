@@ -7,7 +7,6 @@ Feature: Open Source CMS login cases
   Scenario: Verify Post page
     Given Login with valid credentials
     Then click on post menu
-    Then verify title of Post page
     Then verify all links under post menu
     Then click logout and verify user redirected to login page
 

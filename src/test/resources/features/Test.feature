@@ -1,6 +1,6 @@
 @Test
 Feature: Test feature
 
-  Scenario: Test senario
+  Scenario: Test scenario
     Given performSomeSteps
     Then performSomeOtherSteps
