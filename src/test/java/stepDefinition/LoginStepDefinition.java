@@ -14,7 +14,6 @@ import org.openqa.selenium.By;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class LoginStepDefinition extends EnvironmentSetup {
     //    WebDriver driver;
@@ -81,6 +80,13 @@ public class LoginStepDefinition extends EnvironmentSetup {
     public void clickOnPostMenu() throws Exception {
         utils.clickWebElement(postsPage.postsMenuLink);
         Thread.sleep(1000);
+    }
+
+    @Then("^verify title of Post page$")
+    public void verifyTitleOfPostPage() throws Exception {
+        System.out.println("Expected Posts page Title 'Posts ‹ opensourcecms — WordPress'");
+        System.out.println("Actual Posts page Title contains 'Poasdsts'? : " + driver.getTitle());
+        Assert.assertFalse("FAILED to verify Title of Posts page.", driver.getTitle().contains("Posts"));
     }
 
     @Then("verify all links under post menu")

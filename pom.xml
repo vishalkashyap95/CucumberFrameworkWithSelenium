@@ -83,6 +83,7 @@
                             <value>${tag}</value>
                         </property>
                     </systemProperties>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
 
@@ -103,7 +104,7 @@
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>verify</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
@@ -115,6 +116,7 @@
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
                             </jsonFiles>
+                            <!--<checkBuildResult>true</checkBuildResult>-->
                         </configuration>
                     </execution>
                 </executions>
