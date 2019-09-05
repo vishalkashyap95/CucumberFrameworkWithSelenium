@@ -26,7 +26,7 @@ public class Hooks {
         try {
 //            System.out.println("InSide initBrowser : "+sBrowser);
             if (!sBrowser.equals("")) {
-                if (sBrowser.toLowerCase().contains("chrome")) {
+                if (sBrowser.toLowerCase().equals("chrome")) {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     System.out.println("Running tests in Chrome browser.");
