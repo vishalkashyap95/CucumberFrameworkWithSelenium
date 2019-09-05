@@ -31,9 +31,9 @@ public class Hooks {
                     driver = new ChromeDriver();
                     System.out.println("Running tests in Chrome browser.");
                 } else if (sBrowser.toLowerCase().contains("chromeheadless")) {
-                    WebDriverManager.chromedriver().version("72.0.3626.7").setup();
+                    WebDriverManager.chromedriver().version("71.0.3578.30").setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("chromeheadless");
+                    chromeOptions.addArguments("headless");
                     chromeOptions.addArguments("window-size=1366x768");
                     driver = new ChromeDriver(chromeOptions);
                     System.out.println("Running tests in Chrome Headless browser");
