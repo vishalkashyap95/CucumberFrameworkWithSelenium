@@ -3,11 +3,15 @@ package stepDefinition;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -23,17 +27,27 @@ public class Hooks {
 //            System.out.println("InSide initBrowser : "+sBrowser);
             if (!sBrowser.equals("")) {
                 if (sBrowser.toLowerCase().contains("chrome")) {
-                    System.setProperty("webdriver.chrome.driver", getClass().getClassLoader().getResource("browserBinaries/chromedriver.exe").getPath());
+                    WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     System.out.println("Initializing Chrome Browser.");
                 } else if (sBrowser.toLowerCase().contains("headless")) {
                     System.out.println("Iniside Headless browser");
-                    System.setProperty("webdriver.chrome.driver", getClass().getClassLoader().getResource("browserBinaries/chromedriver.exe").getPath());
+                    WebDriverManager.chromedriver().version("72.0.3626.7").setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.addArguments("headless");
                     chromeOptions.addArguments("window-size=1366x768");
                     driver = new ChromeDriver(chromeOptions);
                     System.out.println("Running tests in Chrome Headless Browser");
+                } else if (sBrowser.toLowerCase().contains("firefox") || sBrowser.toLowerCase().contains("mozilla")) {
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    System.out.println("Running tests in Mozilla Firefox browser");
+                } else if (sBrowser.toLowerCase().contains("ie")) {
+                    WebDriverManager.iedriver().setup();
+                    driver = new InternetExplorerDriver();
+                    System.out.println("Running tests in Internet Explorer browser.");
+                } else {
+                    Assert.fail("Does not support browser parameter : " + sBrowser + ". Please add it in Condition.");
                 }
                 driver.manage().window().maximize();
                 return true;

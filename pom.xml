@@ -60,6 +60,11 @@
             <artifactId>maven-cucumber-reporting</artifactId>
             <version>4.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>3.6.2</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
