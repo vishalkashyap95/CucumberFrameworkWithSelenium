@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e868a47-28c8-4c18-9aa9-871964f69da6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/browserBinaries/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+            <state relative-caret-position="148">
+              <caret line="88" column="98" selection-start-line="88" selection-start-column="98" selection-end-line="88" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="307">
               <caret line="51" column="52" lean-forward="true" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/test/java/Common/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/java/Common/EnvironmentSetup.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java" />
       </list>
     </option>
   </component>
@@ -237,6 +234,19 @@
             <path>
               <item name="CucumberFrameworkPractise" type="b2602c69:ProjectViewProjectNode" />
               <item name="CucumberFrameworkWithSelenium" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="Cucumber-html-report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberFrameworkPractise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberFrameworkWithSelenium" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="Cucumber-html-report" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber-html-reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberFrameworkPractise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberFrameworkWithSelenium" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -248,7 +258,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567674524659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567675247852" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -289,7 +299,7 @@
               <list>
                 <option value="clean" />
                 <option value="test" />
-                <option value="-Dbrowser=firefox" />
+                <option value="-Dbrowser=chromeheadless" />
                 <option value="-Dtag=@Login,@Test" />
               </list>
             </option>
@@ -343,12 +353,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" weight="0.23404256" />
+      <window_info anchor="bottom" id="Terminal" weight="0.6121113" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.18003273" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5613748" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4844517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5400982" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33878887" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,16 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -494,8 +494,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
+        <state relative-caret-position="307">
           <caret line="51" column="52" lean-forward="true" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/LoginStepDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="88" column="98" selection-start-line="88" selection-start-column="98" selection-end-line="88" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

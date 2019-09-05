@@ -86,6 +86,7 @@ public class LoginStepDefinition extends EnvironmentSetup {
     public void verifyTitleOfPostPage() throws Exception {
         System.out.println("Expected Posts page Title 'Posts ‹ opensourcecms — WordPress'");
         System.out.println("Actual Posts page Title contains 'Poasdsts'? : " + driver.getTitle());
+        // Making it fail intentionally to generate a fail report and get the screenshot attached.
         Assert.assertFalse("FAILED to verify Title of Posts page.", driver.getTitle().contains("Posts"));
     }
 

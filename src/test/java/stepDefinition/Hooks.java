@@ -29,15 +29,15 @@ public class Hooks {
                 if (sBrowser.toLowerCase().contains("chrome")) {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
-                    System.out.println("Initializing Chrome Browser.");
+                    System.out.println("Running tests in Chrome browser.");
                 } else if (sBrowser.toLowerCase().contains("headless")) {
                     System.out.println("Iniside Headless browser");
                     WebDriverManager.chromedriver().version("72.0.3626.7").setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.addArguments("headless");
+                    chromeOptions.addArguments("chromeheadless");
                     chromeOptions.addArguments("window-size=1366x768");
                     driver = new ChromeDriver(chromeOptions);
-                    System.out.println("Running tests in Chrome Headless Browser");
+                    System.out.println("Running tests in Chrome Headless browser");
                 } else if (sBrowser.toLowerCase().contains("firefox") || sBrowser.toLowerCase().contains("mozilla")) {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
