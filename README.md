@@ -5,6 +5,8 @@ About this framework.
   - This BDD test framework is developed mainly using Cucumber, Selenium with java bindings.
   - This framework can run N numbers of features file by generating a Runner class at runtime.
   - This framework can run 4 tests parallelly(can be re-configured in POM.xml file - by updating forkCount)
+  - This framework also capture screenshot on test failure and attach it to html report.
+  - Execution can be run in headless mode also(Depending on the browser you pass while running).
   - It generate 2 type of reports.
 	- JSON(inside path : target/cucumber-parallel/)
 	- HTML report(inside path : target/Cucumber-html-report/cucumber-html-reports)
