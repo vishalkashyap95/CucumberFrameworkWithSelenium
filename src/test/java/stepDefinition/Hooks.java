@@ -30,8 +30,7 @@ public class Hooks {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     System.out.println("Running tests in Chrome browser.");
-                } else if (sBrowser.toLowerCase().contains("headless")) {
-                    System.out.println("Iniside Headless browser");
+                } else if (sBrowser.toLowerCase().contains("chromeheadless")) {
                     WebDriverManager.chromedriver().version("72.0.3626.7").setup();
                     ChromeOptions chromeOptions = new ChromeOptions();
                     chromeOptions.addArguments("chromeheadless");
