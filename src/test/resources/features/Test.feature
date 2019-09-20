@@ -3,4 +3,4 @@ Feature: Test feature
 
   Scenario: Test scenario
     Given performSomeSteps
-    Then performSomeOtherSteps
+    Then performSomeOtherSteps123
