@@ -10,6 +10,9 @@ import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 import java.util.Map;
@@ -51,6 +54,10 @@ public class LoginStepDefinition extends EnvironmentSetup {
     @When("^Enter valid uesrname and valid password$")
     public void Enter_valid_uesrname_and_valid_password(DataTable credentials) {
         try {
+            Actions act =new Actions(driver);
+//            act.dr
+            Dimension dim = postsPage.postsMenuLink.getSize();
+
             List<Map<String, String>> listOfcredentials = credentials.asMaps(String.class, String.class);
             for (int i = 0; i < listOfcredentials.size(); i++) {
                 System.out.println("Entering username : " + listOfcredentials.get(i).get("username") + " Entering password : " + listOfcredentials.get(i).get("password"));

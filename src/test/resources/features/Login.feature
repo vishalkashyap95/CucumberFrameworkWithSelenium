@@ -11,7 +11,6 @@ Feature: Open Source CMS login cases
     Then verify all links under post menu
     Then click logout and verify user redirected to login page
 
-
   Scenario: : Test Login functionality with valid data
     When Enter valid uesrname and valid password
       | username      | password      |
